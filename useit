@@ -1,0 +1,25 @@
+<html><button onclick = dieRoll()>Roll A Die</button>
+
+<p id = "dieRoll"></p>
+
+<p id = "dieNum"></p>
+<button onclick = dieNumPlus()>+</button>
+<button onclick = dieNumMinus()>-</button>
+
+ <script>function dieRoll() {
+ var dieNum = 1;
+function dieNumPlus(){
+dieNum += 1;
+
+}
+function dieNumMinus(){
+dieNum -= 1;
+}
+ document.getElementById("dieNum").innerHTML = "Number of Dice:" + dieNum;
+
+
+var roll = Math.floor((Math.random() * 6) + 1);
+document.getElementById("dieRoll").innerHTML ="Result" = roll;}
+         </script>
+         
+        </html>
